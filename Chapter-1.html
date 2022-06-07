@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>CHAPTER ONE</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Yebelay Berehan  Biostatistician " />
+    <meta name="date" content="2022-06-07" />
+    <script src="Chapter-1_files/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, title-slide
+
+.title[
+# <p><span style="color:white">CHAPTER ONE</span></p>
+]
+.subtitle[
+## INTRODUCTION TO STATISTICS
+]
+.author[
+### Yebelay Berehan <br><span style="font-size: 50%;">Biostatistician </span>
+]
+.institute[
+### <p><a href="yebelay.ma@gmail.com"><span style="font-size: 80%;"> <span style="color:cyan">yebelay.ma@gmail.com</span></span></a></p>
+]
+.date[
+### 2022-06-07
+]
+
+---
+
+
+
+<div>
+<style type="text/css">.xaringan-extra-logo {
+width: 90px;
+height: 85px;
+z-index: 0;
+background-image: url(logo1.png);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+top:1em;right:1em;
+}
+</style>
+<script>(function () {
+  let tries = 0
+  function addLogo () {
+    if (typeof slideshow === 'undefined') {
+      tries += 1
+      if (tries < 10) {
+        setTimeout(addLogo, 100)
+      }
+    } else {
+      document.querySelectorAll('.remark-slide-content:not(.inverse):not(.hide_logo)')
+        .forEach(function (slide) {
+          const logo = document.createElement('div')
+          logo.classList = 'xaringan-extra-logo'
+          logo.href = null
+          slide.appendChild(logo)
+        })
+    }
+  }
+  document.addEventListener('DOMContentLoaded', addLogo)
+})()</script>
+</div>
+
+
+
+## Introductions
+
+#### What is statistics?
+
+- Statistics is the science of &lt;span style="color:orange"&gt;learning from data&lt;/span&gt;, and &lt;span style="color:red"&gt;of measuring, controlling, and communicating&lt;/span&gt; **uncertainty**.
+
+- refers to the &lt;span style="color:#FF00FF"&gt;collection, organizing, presentation, analyzing, and interpretation&lt;/span&gt; of &lt;span style="color:red"&gt;numerical data&lt;/span&gt; **to make inferences** and 
+
+- **&lt;span style="color:#338EFF "&gt;reach decisions&lt;/span&gt;** in all branches of economics, business,land administration, medicine, and other social and physical sciences.
+
+- The word statistics is defined in **two ways** in the plural and singular sense, depending on its use.
+
+---
+
+- **In plural sense:** Statistics is defined as the **&lt;span style="color:red"&gt;collection of numerical facts or figures&lt;/span&gt;** (or **the raw data themselves**).
+  - Example: **&lt;span style="color:blue"&gt;Vital statistics&lt;/span&gt;** (numerical data on *marriage*, *births*, *deaths*, etc).
+  - The annual birth rate or death rate of Ethiopia.
+- **statistics are aggregate of facts**. 
+- **&lt;span style="color:red"&gt;Single and isolated figures are not statistics&lt;/span&gt;** as they cannot be compared and are unrelated.
+
+- **In singular sense:** Statistics is &lt;span style="color:red"&gt;the art of science&lt;/span&gt; that deals with the method of **&lt;span style="color:#32CD32"&gt;data collection, data organization, data presentation, data analysis and interpretation of results&lt;/span&gt;**. 
+
+- It refers to **a subject matter** that is concerned with **&lt;span style="color:blue"&gt;extracting relevant information&lt;/span&gt; **&lt;span style="color:BlueViolet"&gt;from available data&lt;/span&gt; **&lt;span style="color:red"&gt;with the aim to make sound decisions.&lt;/span&gt;**
+---
+
+##	Classification of Statistics
+
+- **Descriptive Statistics:** procedures used to **&lt;span style="color:blue"&gt;organize and summarize&lt;/span&gt;** **&lt;span style="color:red"&gt;masses of data.&lt;/span&gt;** 
+- **&lt;span style="color:BlueViolet"&gt;Organizing data&lt;/span&gt;** using **&lt;span style="color:BlueViolet"&gt;classification, tabulation, Frequency Distributions&lt;/span&gt;**.
+- **&lt;span style="color:BlueViolet"&gt;Presenting data&lt;/span&gt;** using Graphical and Diagrammatic Presentation
+- **&lt;span style="color:BlueViolet"&gt;Summarize data&lt;/span&gt;** using **Measures of Central Tendency** and **Measures of Dispersion**.
+
+- *Data processing design to the collection, organization, analyzing, and presentation the important features of the data* **&lt;span style="color:green"&gt;without attempting to infer/conclusion about the data&lt;/span&gt;**. 
+
+- It describes the **&lt;span style="color:red"&gt;nature or characteristics of the observed data&lt;/span&gt;** (usually sample) **without making conclusion or generalization**.
+
+---
+
+**Example:**
+
+- The daily temperature **range** of DM was `\(25^oc\)` last week
+
+- The **maximum amount** of coffee export of Ethiopia (as observed from the last 20 years) was in the year 2004.
+
+- **75%** of the instructors in DMU are Male.
+
+- The scores of 50 students in introduction to statistics exam are found to **rage from 20 to 90**.
+
+---
+
+- **Inferential Statistics:** **&lt;span style="color:#FF2626"&gt;are methods for using sample data to make general conclusions (inferences) about populations&lt;/span&gt;**.
+
+- **&lt;span style="color:red"&gt;Performing:&lt;/span&gt;**
+   - **&lt;span style="color:#753422"&gt;Hypothesis testing&lt;/span&gt;**
+   - **&lt;span style="color:#753422"&gt;Determining relationship between variables&lt;/span&gt;**
+   - **&lt;span style="color:#753422"&gt;Making prediction&lt;/span&gt;**
+
+- **Example:** 
+   - The result obtained from the analysis of the income of **1000 randomly selected citizens** in Ethiopia suggests that the average monthly income of a citizen is **&lt;span style="color:#753422"&gt;estimated to be 600 birr&lt;/span&gt;**.
+   
+   - From the survey **obtained on 15 randomly selected towns** of Ethiopia is **&lt;span style="color:#753422"&gt;estimated that 0.1% of the urban Dwellers are Victims of AIDS virus&lt;/span&gt;**.
+   
+---
+
+## Stages In Statistical Investigation
+
+- There are five steps of in statistical investigation 
+
+   - Collection of raw data
+
+   - Organizing of data
+
+   - Presentation of the data
+
+   - Analyzing of data
+
+   - Interpretation of the result
+
+---
+## Stages In Statistical Investigation
+
+#### Collection of data : 
+- Data collection is the **process of collecting or gathering information or data about the variable of interest**. 
+
+- Data are **&lt;span style="color:#753422"&gt;raw materials or inputs&lt;/span&gt;** for **statistical investigation**. 
+
+- Data may be obtained from **&lt;span style="color:#red"&gt;primary and secondary source&lt;/span&gt;**.
+
+**Organization of data:**
+- Organization of data includes **three major steps**. 
+   - **&lt;span style="color:#FF00FF"&gt;Editing:&lt;/span&gt;** checking and omitting inconsistencies or irrelevancies
+   - **&lt;span style="color:#FF00FF"&gt;Classification:&lt;/span&gt;** task of grouping the collecting and edited data
+   - **&lt;span style="color:#FF00FF"&gt;Tabulation:&lt;/span&gt;** put the classified data in the form of table using rows and columns
+
+---
+
+**Presentation of data **
+
+- The **purpose of presentation** in the statistical analysis is to **display what is contained in the data** in the form of **&lt;span style="color:#753422"&gt;charts, pictures diagrams and graph&lt;/span&gt;** **&lt;span style="color:green"&gt;for an easy and better understanding of the data&lt;/span&gt;**.
+
+**Analyzing data** 
+
+- In a statistical investigation, the process of analyzing data includes finding the **various statistical constants** from the collected mass of data such as **&lt;span style="color:#753422"&gt;measure of central tendencies(average), measure of dispersion&lt;/span&gt;** an so on.
+
+- In its extreme case analysis **&lt;span style="color:red"&gt;requires the knowledge of advanced mathematics&lt;/span&gt;**. 
+
+---
+
+**Interpretation of the result** 
+
+- Involve **interpreting constants computed in analyzing data** **&lt;span style="color:green"&gt;for the information of valid conclusion and inferences&lt;/span&gt;**.
+
+- It is the **most difficult and skill requiring stage**.
+
+- At this stage the statistics seems to be very much viable to be **&lt;span style="color:#753422"&gt;misused&lt;/span&gt;**.
+
+- **Correct interpretation** of result will lead to a **&lt;span style="color:green"&gt;valid conclusion of the study and hence can aid in taking correct decisions&lt;/span&gt;**.
+
+- **Improper(incorrect) interpretation** may lead to **wrong conclusion** and makes the whole objects of the study useless.
+
+---
+
+### Definition of Some Basic terms
+
+- **Data:** is the raw material of statistics. 
+
+- **Data (singular):** The value of the variable associated with one element of a population or sample. This value may be a number, a word, or a symbol.
+
+- **Data (plural):** The set of values collected for the variable from each of the elements belonging to the sample.
+
+---
+
+### There are two types of data:
+
+- **Quantitative data:** data of certain group of individuals which is expressed numerically. 
+
+- Example height, weight, age, income, number of students, Students Grades, Educational level, etc certain group of individuals
+
+- **Qualitative data:** data of certain group of individuals that is not expressed numerically.
+
+- Example: colors, language, nationalities, Religion, health, poverty, occupations, etc certain group of individuals.
+
+---
+
+- **Variable:** is a factor or characteristic that **&lt;span style="color:red"&gt;can take on different possible values or outcomes&lt;/span&gt;**. 
+
+- A variable can be qualitative (non-numeric) or quantitative (numeric)
+
+- Example: Income, height, weight, sex, age, diastolic blood pressure etc of a certain group of individual are example of variable.
+
+- **Population:** A complete list of observation(data) of the **&lt;span style="color:red"&gt;entire group of individuals&lt;/span&gt;** under consideration.
+
+- A population can be finite or infinite.
+
+- Example: the number of students in this class, the number of population in Debre Markos.
+
+---
+
+- **Parameter:** is summary or calculated value obtained from a population.
+
+- **Sample:** a **&lt;span style="color:#753422"&gt;portion of population&lt;/span&gt;** selected for further analysis 
+
+- **Sample size:** the **&lt;span style="color:#753422"&gt;number of items&lt;/span&gt;** under investigation in a sample.
+
+- **Sampling:** The **&lt;span style="color:#753422"&gt;process or method of sample selection&lt;/span&gt;** from the population. 
+
+- **Statistic:** is summary or calculated value obtained from a sample.
+
+---
+
+- **Survey:** it a process of obtaining data. 
+
+#### Two types of survey
+
+**i). Census survey:** a way of obtaining data referring the entire population including a total of population.
+
+**ii). Sample survey:** a way of obtaining data referring a portion of the entire population consisting only a partial coverage of the population
+
+- **Sampling Frame:** A list of the elements belonging to the population from which the sample will be drawn.
+
+---
+
+### Importance of Statistics 
+
+- It simplifies mass of data (condensation)
+
+- It Helps to get **&lt;span style="color:blue"&gt;concrete information about any problem&lt;/span&gt;**.
+
+- It Helps **&lt;span style="color:green"&gt;to reliable and objective decision making&lt;/span&gt;**.
+
+- It presents **&lt;span style="color:orange"&gt;facts in a precise and definite form&lt;/span&gt;**.
+
+- It used **&lt;span style="color:cyan"&gt;to facilitate comparison&lt;/span&gt;** using measure of central tendency and measure of variation.
+
+- It used to facilitates **&lt;span style="color:blue"&gt;prediction or Forecasting&lt;/span&gt;**.
+
+- It helps **&lt;span style="color:red"&gt;to formation of suitable policy&lt;/span&gt;**.
+
+---
+
+### Types of Variables and Measurement Scales
+
+#### Types of Variables:
+
+- **Quantitative Variables:** A quantitative variable is a characteristic that can be measured. 
+
+- The values of a quantitative variable are numbers indicating how much or how many of something.
+ 
+- Examples: Family Size, Weight, height and the weights of students.
+
+---
+
+**Types of Quantitative Variables:**
+
+- **Discrete Variables:-** are quantitative variables that will assume only values in a discrete set like the set of integers, such as the number of chairs in the classroom. 
+
+- There is a gap between any two values.
+
+- Examples:- Family size (𝑥 = 1, 2, 3, …)
+
+- **Continuous Variables:-** are quantitative variables that will assume an infinite number of possible values in any given interval such as room temperature. 
+
+- A continuous variable can assume any value along a line interval, including every possible value between any two values.
+
+- Examples:- Height (140 &lt; 𝑥 &lt; 190)
+
+---
+
+- **Qualitative Variables:** It deal with quality, and cannot be measured. 
+
+- These variables arrange individuals into categories according to shared qualities or characteristics.
+
+Examples: Students Grades, Educational level
+
+---
+
+### Exercise
+
+- Identify each of the following examples as **&lt;span style="color:red"&gt;qualitative or quantitative&lt;/span&gt;** variables. 
+
+- **If the variable is quantitative** then classify as **&lt;span style="color:red"&gt;discrete and continuous&lt;/span&gt;**
+
+1. The residence hall for each student in a statistics class.
+1. The number of colors used in a statistics textbook.
+1. The number of files on a computer’s hard disk.
+1. The color of the baseball cap worn by each of 20 students.
+1. The length of time to complete a mathematics homework assignment.
+1. The brand of refrigerator in a home 
+1. The pH level of the water in a swimming pool.
+1. The overall satisfaction rating of a new car. 
+1. The length of time until a pain reliever begins to work.
+
+---
+
+### Types of Measurement Scales
+
+- **Nominal Variable:** is an **&lt;span style="color:red"&gt;unordered set of categories&lt;/span&gt;** identified **only by name**.  
+
+- Nominal measurements only permit you to determine whether two individuals are the same or different.
+
+- A qualitative variable that categorizes (or describes, or names) an element of a population. 
+
+- **&lt;span style="color:red"&gt;No arithmetic and relational operation can be applied&lt;/span&gt;**.
+
+- example: eye colour, gender etc.
+---
+
+- **Ordinal Variable:** is an **&lt;span style="color:red"&gt;ordered set of categories&lt;/span&gt;**. 
+
+- Ordinal measurements tell you the **direction of difference** between two individuals. 
+
+- A qualitative variable that incorporates an **ordered position**, or **ranking**. 
+
+- **&lt;span style="color:blue"&gt;Arithmetic operations are not applicable&lt;/span&gt;** but **&lt;span style="color:green"&gt;relational operations are applicable&lt;/span&gt;**. 
+
+- *Ordering is the sole property of ordinal scale*.
+
+- Example: finishing position in a race. 
+- You can say that the **&lt;span style="color:blue"&gt;person who finished first was faster than the person who finished second&lt;/span&gt;**, **&lt;span style="color:red"&gt;but you *don’t* know how much faster&lt;/span&gt;**. 
+
+---
+
+- **Interval scale:** is an **&lt;span style="color:green"&gt;ordered series of equal-sized categories&lt;/span&gt;**. 
+
+- Interval measurements identify the direction and magnitude of a difference. 
+- The zero point is located arbitrarily on an interval scale.
+
+- All arithmetic operations **&lt;span style="color:red"&gt;except division&lt;/span&gt;** are applicable.
+
+- Relational operations are also possible
+
+- In short, addition and subtraction are meaningful for interval scale variables.
+
+- Notice that the `\(0^\circ\)` does not mean “no temperature at all”.
+
+---
+
+
+- **Ratio scale:**  is an interval scale where a value of zero indicates none of the variable.
+
+- Ratio measurements identify the direction and magnitude of differences and allow ratio comparisons of measurements.
+
+- All arithmetic and relation  operation are applied.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightLines": true,
+"ratio": "14:9",
+"highlightSpans": true,
+"highlightStyle": "github",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

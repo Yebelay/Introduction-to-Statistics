@@ -1,0 +1,355 @@
+---
+title: |
+       <span style="color:white">CHAPTER ONE</span>
+subtitle: "INTRODUCTION TO STATISTICS"
+author: "Yebelay Berehan <br><span style = 'font-size: 50%;'>Biostatistician </span>"
+institute: |
+           [<span style = 'font-size: 80%;'> <span style="color:cyan">yebelay.ma\@gmail.com</span></span>](yebelay.ma\@gmail.com)
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+     # highlightStyle: googlecode
+      highlightLines: true
+      #highlightLanguage: ["r"]
+      ratio: "14:9"
+     # highlightLines: true
+      highlightSpans: true
+      highlightStyle: github
+      countIncrementalSlides: false
+      titleSlideClass: ["center","middle"]
+  includes:
+    in_header: columns.tex
+---
+```{r setup, include=FALSE, purl=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(comment = "##")
+library(datasets)
+library(ggplot2)
+library(dplyr)
+```
+
+```{r xaringan-logo, echo=FALSE}
+xaringanExtra::use_logo(image_url = "logo1.png", 
+  exclude_class = c("inverse", "hide_logo"),  width = "90px",height = "85px")
+```
+
+```{r xaringan-themer, include=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#0556AA", 
+  secondary_color = "#0556AA",
+  #text_font_google = google_font("Roboto"),
+  text_font_size = "26px",
+  background_color = "#FFFFFF",
+  #code_font_family = "Ligature Code",
+  code_font_size = "0.9em", 
+  footnote_color = "blue",
+  footnote_position_bottom = "0.1em",
+)
+```
+
+## Introductions
+
+#### What is statistics?
+
+- Statistics is the science of <span style="color:orange">learning from data</span>, and <span style="color:red">of measuring, controlling, and communicating</span> **uncertainty**.
+
+- refers to the <span style="color:#FF00FF">collection, organizing, presentation, analyzing, and interpretation</span> of <span style="color:red">numerical data</span> **to make inferences** and 
+
+- **<span style="color:#338EFF ">reach decisions</span>** in all branches of economics, business,land administration, medicine, and other social and physical sciences.
+
+- The word statistics is defined in **two ways** in the plural and singular sense, depending on its use.
+
+---
+
+- **In plural sense:** Statistics is defined as the **<span style="color:red">collection of numerical facts or figures</span>** (or **the raw data themselves**).
+  - Example: **<span style="color:blue">Vital statistics</span>** (numerical data on *marriage*, *births*, *deaths*, etc).
+  - The annual birth rate or death rate of Ethiopia.
+- **statistics are aggregate of facts**. 
+- **<span style="color:red">Single and isolated figures are not statistics</span>** as they cannot be compared and are unrelated.
+
+- **In singular sense:** Statistics is <span style="color:red">the art of science</span> that deals with the method of **<span style="color:#32CD32">data collection, data organization, data presentation, data analysis and interpretation of results</span>**. 
+
+- It refers to **a subject matter** that is concerned with **<span style="color:blue">extracting relevant information</span> **<span style="color:BlueViolet">from available data</span> **<span style="color:red">with the aim to make sound decisions.</span>**
+---
+
+##	Classification of Statistics
+
+- **Descriptive Statistics:** procedures used to **<span style="color:blue">organize and summarize</span>** **<span style="color:red">masses of data.</span>** 
+- **<span style="color:BlueViolet">Organizing data</span>** using **<span style="color:BlueViolet">classification, tabulation, Frequency Distributions</span>**.
+- **<span style="color:BlueViolet">Presenting data</span>** using Graphical and Diagrammatic Presentation
+- **<span style="color:BlueViolet">Summarize data</span>** using **Measures of Central Tendency** and **Measures of Dispersion**.
+
+- *Data processing design to the collection, organization, analyzing, and presentation the important features of the data* **<span style="color:green">without attempting to infer/conclusion about the data</span>**. 
+
+- It describes the **<span style="color:red">nature or characteristics of the observed data</span>** (usually sample) **without making conclusion or generalization**.
+
+---
+
+**Example:**
+
+- The daily temperature **range** of DM was $25^oc$ last week
+
+- The **maximum amount** of coffee export of Ethiopia (as observed from the last 20 years) was in the year 2004.
+
+- **75%** of the instructors in DMU are Male.
+
+- The scores of 50 students in introduction to statistics exam are found to **rage from 20 to 90**.
+
+---
+
+- **Inferential Statistics:** **<span style="color:#FF2626">are methods for using sample data to make general conclusions (inferences) about populations</span>**.
+
+- **<span style="color:red">Performing:</span>**
+   - **<span style="color:#753422">Hypothesis testing</span>**
+   - **<span style="color:#753422">Determining relationship between variables</span>**
+   - **<span style="color:#753422">Making prediction</span>**
+
+- **Example:** 
+   - The result obtained from the analysis of the income of **1000 randomly selected citizens** in Ethiopia suggests that the average monthly income of a citizen is **<span style="color:#753422">estimated to be 600 birr</span>**.
+   
+   - From the survey **obtained on 15 randomly selected towns** of Ethiopia is **<span style="color:#753422">estimated that 0.1% of the urban Dwellers are Victims of AIDS virus</span>**.
+   
+---
+
+## Stages In Statistical Investigation
+
+- There are five steps of in statistical investigation 
+
+   - Collection of raw data
+
+   - Organizing of data
+
+   - Presentation of the data
+
+   - Analyzing of data
+
+   - Interpretation of the result
+
+---
+## Stages In Statistical Investigation
+
+#### Collection of data : 
+- Data collection is the **process of collecting or gathering information or data about the variable of interest**. 
+
+- Data are **<span style="color:#753422">raw materials or inputs</span>** for **statistical investigation**. 
+
+- Data may be obtained from **<span style="color:#red">primary and secondary source</span>**.
+
+**Organization of data:**
+- Organization of data includes **three major steps**. 
+   - **<span style="color:#FF00FF">Editing:</span>** checking and omitting inconsistencies or irrelevancies
+   - **<span style="color:#FF00FF">Classification:</span>** task of grouping the collecting and edited data
+   - **<span style="color:#FF00FF">Tabulation:</span>** put the classified data in the form of table using rows and columns
+
+---
+
+**Presentation of data **
+
+- The **purpose of presentation** in the statistical analysis is to **display what is contained in the data** in the form of **<span style="color:#753422">charts, pictures diagrams and graph</span>** **<span style="color:green">for an easy and better understanding of the data</span>**.
+
+**Analyzing data** 
+
+- In a statistical investigation, the process of analyzing data includes finding the **various statistical constants** from the collected mass of data such as **<span style="color:#753422">measure of central tendencies(average), measure of dispersion</span>** an so on.
+
+- In its extreme case analysis **<span style="color:red">requires the knowledge of advanced mathematics</span>**. 
+
+---
+
+**Interpretation of the result** 
+
+- Involve **interpreting constants computed in analyzing data** **<span style="color:green">for the information of valid conclusion and inferences</span>**.
+
+- It is the **most difficult and skill requiring stage**.
+
+- At this stage the statistics seems to be very much viable to be **<span style="color:#753422">misused</span>**.
+
+- **Correct interpretation** of result will lead to a **<span style="color:green">valid conclusion of the study and hence can aid in taking correct decisions</span>**.
+
+- **Improper(incorrect) interpretation** may lead to **wrong conclusion** and makes the whole objects of the study useless.
+
+---
+
+### Definition of Some Basic terms
+
+- **Data:** is the raw material of statistics. 
+
+- **Data (singular):** The value of the variable associated with one element of a population or sample. This value may be a number, a word, or a symbol.
+
+- **Data (plural):** The set of values collected for the variable from each of the elements belonging to the sample.
+
+---
+
+### There are two types of data:
+
+- **Quantitative data:** data of certain group of individuals which is expressed numerically. 
+
+- Example height, weight, age, income, number of students, Students Grades, Educational level, etc certain group of individuals
+
+- **Qualitative data:** data of certain group of individuals that is not expressed numerically.
+
+- Example: colors, language, nationalities, Religion, health, poverty, occupations, etc certain group of individuals.
+
+---
+
+- **Variable:** is a factor or characteristic that **<span style="color:red">can take on different possible values or outcomes</span>**. 
+
+- A variable can be qualitative (non-numeric) or quantitative (numeric)
+
+- Example: Income, height, weight, sex, age, diastolic blood pressure etc of a certain group of individual are example of variable.
+
+- **Population:** A complete list of observation(data) of the **<span style="color:red">entire group of individuals</span>** under consideration.
+
+- A population can be finite or infinite.
+
+- Example: the number of students in this class, the number of population in Debre Markos.
+
+---
+
+- **Parameter:** is summary or calculated value obtained from a population.
+
+- **Sample:** a **<span style="color:#753422">portion of population</span>** selected for further analysis 
+
+- **Sample size:** the **<span style="color:#753422">number of items</span>** under investigation in a sample.
+
+- **Sampling:** The **<span style="color:#753422">process or method of sample selection</span>** from the population. 
+
+- **Statistic:** is summary or calculated value obtained from a sample.
+
+---
+
+- **Survey:** it a process of obtaining data. 
+
+#### Two types of survey
+
+**i). Census survey:** a way of obtaining data referring the entire population including a total of population.
+
+**ii). Sample survey:** a way of obtaining data referring a portion of the entire population consisting only a partial coverage of the population
+
+- **Sampling Frame:** A list of the elements belonging to the population from which the sample will be drawn.
+
+---
+
+### Importance of Statistics 
+
+- It simplifies mass of data (condensation)
+
+- It Helps to get **<span style="color:blue">concrete information about any problem</span>**.
+
+- It Helps **<span style="color:green">to reliable and objective decision making</span>**.
+
+- It presents **<span style="color:orange">facts in a precise and definite form</span>**.
+
+- It used **<span style="color:cyan">to facilitate comparison</span>** using measure of central tendency and measure of variation.
+
+- It used to facilitates **<span style="color:blue">prediction or Forecasting</span>**.
+
+- It helps **<span style="color:red">to formation of suitable policy</span>**.
+
+---
+
+### Types of Variables and Measurement Scales
+
+#### Types of Variables:
+
+- **Quantitative Variables:** A quantitative variable is a characteristic that can be measured. 
+
+- The values of a quantitative variable are numbers indicating how much or how many of something.
+ 
+- Examples: Family Size, Weight, height and the weights of students.
+
+---
+
+**Types of Quantitative Variables:**
+
+- **Discrete Variables:-** are quantitative variables that will assume only values in a discrete set like the set of integers, such as the number of chairs in the classroom. 
+
+- There is a gap between any two values.
+
+- Examples:- Family size (𝑥 = 1, 2, 3, …)
+
+- **Continuous Variables:-** are quantitative variables that will assume an infinite number of possible values in any given interval such as room temperature. 
+
+- A continuous variable can assume any value along a line interval, including every possible value between any two values.
+
+- Examples:- Height (140 < 𝑥 < 190)
+
+---
+
+- **Qualitative Variables:** It deal with quality, and cannot be measured. 
+
+- These variables arrange individuals into categories according to shared qualities or characteristics.
+
+Examples: Students Grades, Educational level
+
+---
+
+### Exercise
+
+- Identify each of the following examples as **<span style="color:red">qualitative or quantitative</span>** variables. 
+
+- **If the variable is quantitative** then classify as **<span style="color:red">discrete and continuous</span>**
+
+1. The residence hall for each student in a statistics class.
+1. The number of colors used in a statistics textbook.
+1. The number of files on a computer’s hard disk.
+1. The color of the baseball cap worn by each of 20 students.
+1. The length of time to complete a mathematics homework assignment.
+1. The brand of refrigerator in a home 
+1. The pH level of the water in a swimming pool.
+1. The overall satisfaction rating of a new car. 
+1. The length of time until a pain reliever begins to work.
+
+---
+
+### Types of Measurement Scales
+
+- **Nominal Variable:** is an **<span style="color:red">unordered set of categories</span>** identified **only by name**.  
+
+- Nominal measurements only permit you to determine whether two individuals are the same or different.
+
+- A qualitative variable that categorizes (or describes, or names) an element of a population. 
+
+- **<span style="color:red">No arithmetic and relational operation can be applied</span>**.
+
+- example: eye colour, gender etc.
+---
+
+- **Ordinal Variable:** is an **<span style="color:red">ordered set of categories</span>**. 
+
+- Ordinal measurements tell you the **direction of difference** between two individuals. 
+
+- A qualitative variable that incorporates an **ordered position**, or **ranking**. 
+
+- **<span style="color:blue">Arithmetic operations are not applicable</span>** but **<span style="color:green">relational operations are applicable</span>**. 
+
+- *Ordering is the sole property of ordinal scale*.
+
+- Example: finishing position in a race. 
+- You can say that the **<span style="color:blue">person who finished first was faster than the person who finished second</span>**, **<span style="color:red">but you *don’t* know how much faster</span>**. 
+
+---
+
+- **Interval scale:** is an **<span style="color:green">ordered series of equal-sized categories</span>**. 
+
+- Interval measurements identify the direction and magnitude of a difference. 
+- The zero point is located arbitrarily on an interval scale.
+
+- All arithmetic operations **<span style="color:red">except division</span>** are applicable.
+
+- Relational operations are also possible
+
+- In short, addition and subtraction are meaningful for interval scale variables.
+
+- Notice that the $0^\circ$ does not mean “no temperature at all”.
+
+---
+
+
+- **Ratio scale:**  is an interval scale where a value of zero indicates none of the variable.
+
+- Ratio measurements identify the direction and magnitude of differences and allow ratio comparisons of measurements.
+
+- All arithmetic and relation  operation are applied.
